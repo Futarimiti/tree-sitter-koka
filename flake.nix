@@ -12,7 +12,7 @@
         extraGrammars.tree-sitter-koka = {
           language = "koka";
           inherit (prev.tree-sitter) version;
-          src = _: builtins.path { path = ./.; name = "tree-sitter-koka-src"; };
+          src = builtins.path { path = ./.; name = "tree-sitter-koka-src"; };
         };
       };
     };
